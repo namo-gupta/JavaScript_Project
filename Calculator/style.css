@@ -4,43 +4,71 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
-  
-  .calculator {
-    width: 300px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .display {
-    background: #f2f2f2;
-    padding: 10px;
-  }
-  
-  input {
+}
+
+.calculator {
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    top: 15px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.display {
+    background: #eaedef;
+    padding: 15px;
+}
+
+input {
     width: 100%;
+    height: 83px;
     border: none;
     font-size: 24px;
     text-align: right;
-  }
-  
-  .buttons {
+}
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-  
-  button {
+    grid-column-gap: 23px;
+    grid-row-gap: 23px;
+    padding: 2rem;
+}
+
+button {
     padding: 10px;
     font-size: 18px;
     cursor: pointer;
-    border: none;
+    border-radius: 50%;
     background: #f2f2f2;
     transition: background 0.2s;
-  }
-  
-  button:hover {
+    font-weight: bold;
+    border-width: 0;
+}
+
+.division {
+    background-color: #20b2aa;
+}
+
+.multiply {
+    background-color: #ffa500;
+}
+
+.sub {
+    background-color: #f08080;
+}
+
+.add {
+    background-color: #7d93e0;
+}
+
+.c {
+    background-color: #9477af;
+}
+
+button:hover {
     background: #ddd;
-  }
-  
+}
