@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="view-port" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header style="background-color: #4b9cd3; color: white; height: 5rem">
+        <h1 style="padding: 1.4rem 3rem">
+            The <span style="color: #005a9c; font-style: bold">Quiz</span>
+        </h1>
+    </header>
+    <div class="quiz-container">
+        <div class="home-page" id="home-page">
+            <div class="home-left">
+                <div class="terms-conditions" id="terms-conditions" style="margin: 1rem">
+                    <ul>
+                        <li>
+                            This quiz app exclusively consists of multiple-choice questions,
+                            where each question has one correct answer among the provided
+                            options.
+                        </li>
+                        <li>
+                            Each question is allotted a time limit of 30 seconds. Users must
+                            select their answer within this time frame.
+                        </li>
+                        <li>
+                            Users will receive points based on the accuracy of their
+                            answers. Correct answers will earn points, while incorrect
+                            answers will not affect the score.
+                        </li>
+                        <li>
+                            Immediate feedback on the correctness of answers will be
+                            provided after each question.
+                        </li>
+                        <li>
+                            Any disputes or concerns regarding the quiz or its results can
+                            be communicated to our support team for further review.
+                        </li>
+                    </ul>
+                </div>
+                <button id="start-btn">
+                    Start
+                </button>
+            </div>
+            <div class="homePageImage">
+                <img src="https://1.bp.blogspot.com/-9wUfNSk7ObQ/XrPCdtl8nwI/AAAAAAAAGE8/dI9Y70JXapgEEB-eEr6N5EsilkkDR2xCACLcBGAsYHQ/s1600/online-quiz-website-courses.jpg"
+                    alt="img" />
+            </div>
+        </div>
+        <div class="countdown" id="countdown"></div>
+
+        <div class="quiz" id="quiz" style="display: none">
+            <div class="question" id="question" style="padding: 20px; font-size: 18px;"></div>
+            <div class="choices" id="choices"
+                style="display: flex;flex-direction: column;justify-content: left;padding:20px"></div>
+            <div class="feedback" id="feedback"></div>
+            <button id="next-btn" style="display: none">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
